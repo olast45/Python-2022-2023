@@ -1,0 +1,19 @@
+
+ZADANIE 3.1
+
+Nie jest, ponieważ pierwsza skrócona pętla for została napisana niepoprawnie składniowo, gdyż
+pisząc skróconą pętle for najpierw podajemy strukturę danych, po której iterujemy, następnie
+co chcemy zrobić w danej iteracji a na końcu pod jakim warunkiem
+Jedynym miejscem, w którym używamy dwukropka w takiej implementacji pętli for jest miejsce po tym, w którym
+podajemy interpreterowi po czym ma iterować
+
+
+ZADANIE 3.2
+
+W drugiej linijce kodu mamy niepoprawne przypisanie zmiennych, ponieważ do dwóch zmiennych przypisujemy 3 wartości
+W trzeciej linijce kodu błąd mamy w miejscu X[1] = 4, ponieważ X jest krotką, a krotka jest obiektem niemutowalnym
+W czwartej linijce kodu problem pojawia się w miejscu X[3] = 4, ponieważ w tym przypadku X jest listą i indeks 3
+wykracza poza zakres indeksów tej listy
+W piątej linijce kodu błąd generuje funkcja append(), gdyż obiekt string nie posiada takiej metody
+W ostatniej linijce kodu źle została użyta funkcja map(), ponieważ funkcja pow() przyjmuje 2 argumenty, a został podany tylko 1
+
