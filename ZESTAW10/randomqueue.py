@@ -11,7 +11,9 @@ class RandomQueue:
         self.data.append(item)
 
     def remove(self):  # zwraca losowy element w czasie O(1)
-        return self.data.pop(random.randrange(len(self.data)))
+        element_index = random.randint(0, len(self.data) - 1)
+        self.data[element_index], self.data[-1] = self.data[-1], self.data[element_index]
+        return self.data.pop()
 
     def is_empty(self):
         return len(self.data) == 0
